@@ -4,19 +4,19 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
-    background-color:rgb(10, 39, 68);
+    background-color:rgb(10, 22, 34);
 }
 
 .header {
     display: flex;
     gap: 25px;
     justify-content: space-between;
+    padding: 16px 0;
 }
 
 .logo {
     font-weight: bold;
     font-size: 25px;
-    /*margin-left: 56px;*/
     color: white;
     padding: 0 50px;
 }
@@ -38,4 +38,34 @@ a:link {
 a:visited {
     text-decoration: none;
     color: lightgray;
+}
+
+.advertise {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    padding: 56px 56px;
+}
+
+.left-advertise {
+    width: 350px;
+    color: white;
+}
+
+.image-holder {
+    display: flex;
+    background-color: grey;
+    width: 500px;
+    color: whitesmoke;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    color: white;
+    font-weight: bold;
+    padding: 8px 16px;
+    background-color: dodgerblue;
+    border-radius: 8px;
+    border-color: dodgerblue;
 }
