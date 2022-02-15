@@ -1,33 +1,44 @@
+*{
+    box-sizing: border-box;
+}
 
 body {
     font-family: "Times New Roman", sans-serif;
     display: flex;
     flex-direction: column;
     margin: 0;
-    background-color:rgb(10, 22, 34);
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+p {
+    margin: 0;
 }
 
 .header {
+    height: 5%;
     display: flex;
-    gap: 25px;
     justify-content: space-between;
-    padding: 16px 0;
+    padding: 2% 0;
+    flex-shrink: 0%;
+    background-color:rgb(10, 22, 34);
 }
 
 .logo {
     font-weight: bold;
     font-size: 25px;
     color: white;
-    padding: 0 50px;
 }
 
 .right-links {
     display: flex;
+    flex-shrink: 0;
     gap: 16px;
     color: lightgrey;
     margin-left: 56px;
     font-size: 16px;
-    padding: 0 50px;
 }
 
 a:link {
@@ -41,21 +52,22 @@ a:visited {
 }
 
 .advertise {
+    height: 20%;
     display: flex;
-    gap: 50px;
     justify-content: space-between;
     padding: 56px 56px;
+    background-color:rgb(10, 22, 34);
 }
 
 .left-advertise {
-    width: 350px;
+    width: 40%;
     color: white;
 }
 
 .image-holder {
     display: flex;
-    background-color: grey;
-    width: 500px;
+    background-color: rgb(106, 106, 116);
+    width: 40%;
     color: whitesmoke;
     align-items: center;
     justify-content: center;
@@ -68,4 +80,80 @@ button {
     background-color: dodgerblue;
     border-radius: 8px;
     border-color: dodgerblue;
+}
+
+.subtext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+    /*margin: 5% 0%;*/
+    flex: 1 0 auto;
+}
+
+.image-container {
+    display: flex;
+    margin: 2% 0% 5% 0%;
+}
+
+.images {
+    display:flex;
+    flex-direction: column;
+    width: 150px;
+    margin: 0px 16px;
+    align-items: center;
+}
+
+.square {
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: dodgerblue;
+}
+
+.quote-section {
+    display: flex;
+    width: 100%;
+    background-color: rgb(235, 230, 228);
+    justify-content: center;
+    padding: 7% 0%;
+}
+
+.quote {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    margin: 0;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.author {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    align-self: end;
+}
+
+.footer {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    height: 25%;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    margin: 5%;
+}
+
+.signup {
+    display: flex;
+    justify-content: space-between;
+    background-color: dodgerblue;
+    border-radius: 8px;
+    padding: 8px 16px;
+    gap: 2%;
+    margin: auto;
 }
